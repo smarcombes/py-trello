@@ -82,6 +82,9 @@ def create_oauth_token():
     print "You may now access protected resources using the access tokens above."
     print
 
+    # Return result
+    return access_token
+
 if __name__ == '__main__':
     create_oauth_token()
 
