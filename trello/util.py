@@ -19,7 +19,7 @@ def create_oauth_token():
     authorize_url = 'https://trello.com/1/OAuthAuthorizeToken'
     access_token_url = 'https://trello.com/1/OAuthGetAccessToken'
 
-    expiration = os.environ.get('TRELLO_EXPIRATION', None)
+    expiration = os.environ.get('TRELLO_EXPIRATION', 'never')
     scope = os.environ.get('TRELLO_SCOPE', 'read,write')
     trello_key = os.environ['TRELLO_API_KEY']
     trello_secret = os.environ['TRELLO_API_SECRET']
